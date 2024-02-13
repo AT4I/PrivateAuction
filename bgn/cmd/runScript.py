@@ -1,6 +1,13 @@
 import subprocess
 
 # Define the command-line arguments for myprogram.go
+#    num-iterations(typically 5 - maybe higher for low key sizes, and low message space),
+#    key-bits (256-2048)
+#    message space (order of millions to trillion for large key size)
+#    number of bidders (2-128 - larger numbers for smaller key size)
+#    max rand - relative to bit value / message space
+#    max bid value 
+#    rng seed for simulation
 args = [
     [5, 512, 10000000000, 5, 10000, 100000, 76],
     [5, 512, 10000000000, 10, 10000, 100000, 76],
